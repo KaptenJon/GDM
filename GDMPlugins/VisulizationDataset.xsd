@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VisulizationDataset" targetNamespace="http://tempuri.org/VisulizationDataset.xsd" xmlns:mstns="http://tempuri.org/VisulizationDataset.xsd" xmlns="http://tempuri.org/VisulizationDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VisulizationDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VisulizationDataset" msprop:Generator_UserDSName="VisulizationDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ResourceActiveTime" msprop:Generator_TableClassName="ResourceActiveTimeDataTable" msprop:Generator_TableVarName="tableResourceActiveTime" msprop:Generator_RowChangedName="ResourceActiveTimeRowChanged" msprop:Generator_TablePropName="ResourceActiveTime" msprop:Generator_RowDeletingName="ResourceActiveTimeRowDeleting" msprop:Generator_RowChangingName="ResourceActiveTimeRowChanging" msprop:Generator_RowEvHandlerName="ResourceActiveTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourceActiveTimeRowDeleted" msprop:Generator_RowClassName="ResourceActiveTimeRow" msprop:Generator_UserTableName="ResourceActiveTime" msprop:Generator_RowEvArgName="ResourceActiveTimeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Resource" msprop:Generator_ColumnVarNameInTable="columnResource" msprop:Generator_ColumnPropNameInRow="Resource" msprop:Generator_ColumnPropNameInTable="ResourceColumn" msprop:Generator_UserColumnName="Resource" type="xs:string" default="&quot;&quot;" minOccurs="0" />
+              <xs:element name="AverageActiveTime" msprop:Generator_ColumnVarNameInTable="columnAverageActiveTime" msprop:Generator_ColumnPropNameInRow="AverageActiveTime" msprop:Generator_ColumnPropNameInTable="AverageActiveTimeColumn" msprop:Generator_UserColumnName="AverageActiveTime" type="xs:double" default="0" />
+              <xs:element name="StdActiveTimePlus" msprop:Generator_ColumnVarNameInTable="columnStdActiveTimePlus" msprop:Generator_ColumnPropNameInRow="StdActiveTimePlus" msprop:Generator_ColumnPropNameInTable="StdActiveTimePlusColumn" msprop:Generator_UserColumnName="StdActiveTimePlus" type="xs:double" default="0" />
+              <xs:element name="StdActiveTimeMinus" msprop:Generator_ColumnVarNameInTable="columnStdActiveTimeMinus" msprop:Generator_ColumnPropNameInRow="StdActiveTimeMinus" msprop:Generator_ColumnPropNameInTable="StdActiveTimeMinusColumn" msprop:Generator_UserColumnName="StdActiveTimeMinus" type="xs:double" default="0" />
+              <xs:element name="Zero" msprop:Generator_ColumnVarNameInTable="columnZero" msprop:Generator_ColumnPropNameInRow="Zero" msprop:Generator_ColumnPropNameInTable="ZeroColumn" msprop:Generator_UserColumnName="Zero" type="xs:double" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

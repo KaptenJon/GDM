@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Namespaces>
+  <Namespace Name="ConnectSQLServer">
+   <Messages>
+    <Message Id="SQL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="85" Level="Error">Correct the casing of 'SQL' in namespace name 'ConnectSQLServer' by changing it to 'Sql'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\GDMTool\Plugin\ConnectSQLServer.dll">
+   <Modules>
+    <Module Name="connectsqlserver.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'ConnectSQLServer.dll' with a strong name key.</Issue>
+      </Message>
+      <Message Id="SQL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="85" Level="Error">Correct the casing of 'SQL' in assembly name 'ConnectSQLServer.dll' by changing it to 'Sql'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'ConnectSQLServer.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'ConnectSQLServer.dll' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="ConnectSQLServer">
+       <Types>
+        <Type Name="ConnectionPlantSimulationSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ComponentID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectionPlantSimulationSettings.cs" Line="56">Correct the casing of 'ID' in member name 'ConnectionPlantSimulationSettings.ComponentID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Mttf" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mttf" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectionPlantSimulationSettings.cs" Line="105">Correct the spelling of 'Mttf' in member name 'ConnectionPlantSimulationSettings.Mttf' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Mttr" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mttr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectionPlantSimulationSettings.cs" Line="92">Correct the spelling of 'Mttr' in member name 'ConnectionPlantSimulationSettings.Mttr' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StationID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectionPlantSimulationSettings.cs" Line="68">Correct the casing of 'ID' in member name 'ConnectionPlantSimulationSettings.StationID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConnectSqlServer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">The type name 'ConnectSqlServer' conflicts in whole or in part with the namespace name 'ConnectSQLServer'. Change either name to eliminate the conflict.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Apply(GDMInterfaces.IModel,GDMInterfaces.PluginSettings,GDMInterfaces.ILog,GDMInterfaces.IStatus)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="47">In method 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)', object 'myConnection' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'myConnection' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="63">In method 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)', call System.IDisposable.Dispose on object 'myCommand' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="54">Method 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string)'. Retrieve the following string(s) from a resource table instead: "Connection failed".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="68">Method 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string)'. Retrieve the following string(s) from a resource table instead: "Read data failed".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="52">Modify 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="66">Modify 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="63">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' could contain the following variables 'settings.TableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="54">Change 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="68">Change 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="56">In externally visible method 'ConnectSqlServer.Apply(IModel, PluginSettings, ILog, IStatus)', validate parameter 'model' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowSettingsObject" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="21">The 'this' parameter (or 'Me' in Visual Basic) of 'ConnectSqlServer.ShowSettingsObject' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_ShowSettingsObject()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServer.cs" Line="21">'ConnectSqlServer.ShowSettingsObject.get()' creates an exception of type 'NotImplementedException', an exception type that should not be raised in a property. If this exception instance might be raised, use a different exception type, convert this property into a method, or change this property's logic so that it no longer raises an exception.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConnectSqlServerSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetDynamicSettings()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ConnectSQLServerSettings.cs" Line="73">Change 'ConnectSqlServerSettings.GetDynamicSettings()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConnectSqlServerSettings+DynamicSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Error">Do not nest type 'ConnectSqlServerSettings.DynamicSettings'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#_settings" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ConnectSqlServerSettings.DynamicSettings._settings' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ExportToPlantSimSql" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Sim' in type name 'ExportToPlantSimSql'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Apply(GDMInterfaces.IModel,GDMInterfaces.PluginSettings,GDMInterfaces.ILog,GDMInterfaces.IStatus)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ExportToPlantSimSQL.cs" Line="40">In externally visible method 'ExportToPlantSimSql.Apply(IModel, PluginSettings, ILog, IStatus)', validate parameter 'model' before using it.</Issue>
+            </Message>
+            <Message Id="3" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="ExportToPlantSimSQL.cs" Line="40">In externally visible method 'ExportToPlantSimSql.Apply(IModel, PluginSettings, ILog, IStatus)', validate parameter 'status' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlantSimDataContext" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Sim' in type name 'PlantSimDataContext'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#SimulationDatas" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Datas" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="67">Correct the spelling of 'Datas' in member name 'PlantSimDataContext.SimulationDatas' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SimulationData" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Availibility" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Availibility" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="170">Correct the spelling of 'Availibility' in member name 'SimulationData.Availibility' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CompnentID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="130">Correct the casing of 'ID' in member name 'SimulationData.CompnentID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+            <Message Id="Compnent" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="130">Correct the spelling of 'Compnent' in member name 'SimulationData.CompnentID' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MTTF" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="MTTF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="210">Correct the casing of 'MTTF' in member name 'SimulationData.MTTF' by changing it to 'Mttf'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MTTR" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="MTTR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="190">Correct the casing of 'MTTR' in member name 'SimulationData.MTTR' by changing it to 'Mttr'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StationID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="PlantSimDatabase.designer.cs" Line="150">Correct the casing of 'ID' in member name 'SimulationData.StationID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SqlConnectDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="settings" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="18">'SqlConnectDialog.EditValue(ITypeDescriptorContext, IServiceProvider, object)' declares a variable, 'settings', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#List" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;string&gt;' in 'SqlConnectDialog.List' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Warning">Consider making 'SqlConnectDialog.List' non-public or a constant.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowDialog()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="55">In method 'SqlConnectDialog.ShowDialog()', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="43">In method 'SqlConnectDialog.ShowDialog()', call System.IDisposable.Dispose on object 'dcd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="66">Object 'connection' can be disposed more than once in method 'SqlConnectDialog.ShowDialog()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 66</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="71">Method 'SqlConnectDialog.ShowDialog()' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string)'. Retrieve the following string(s) from a resource table instead: "Connection failed".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="69">Modify 'SqlConnectDialog.ShowDialog()' to catch a more specific exception than 'object' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLConnectDialog.cs" Line="71">Change 'SqlConnectDialog.ShowDialog()' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SqlTableListBoxEditor" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'SqlTableListBoxEditor' because it creates members of the following IDisposable types: 'ListBox'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="42">In externally visible method 'SqlTableListBoxEditor.EditValue(ITypeDescriptorContext, IServiceProvider, object)', validate parameter 'provider' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitTables(GDMInterfaces.IModel)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="model" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="97">Parameter 'model' of 'SqlTableListBoxEditor.InitTables(IModel)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tables()" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="69">In method 'SqlTableListBoxEditor.Tables()', call System.IDisposable.Dispose on object 'cnn' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="74">In method 'SqlTableListBoxEditor.Tables()', call System.IDisposable.Dispose on object 'command' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="89">Method 'SqlTableListBoxEditor.Tables()' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string)'. Retrieve the following string(s) from a resource table instead: "Read table list failed!".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="87">Modify 'SqlTableListBoxEditor.Tables()' to catch a more specific exception than 'object' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\jonan\Documents\Visual Studio 2015\Projects\Chalmers\GDM Tools\GDMTool\ConnectSQLServer" File="SQLTableListBoxEditor.cs" Line="89">Change 'SqlTableListBoxEditor.Tables()' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ConnectSQLServer.Images">
+       <Types>
+        <Type Name="Icons" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2016-01-15 11:01:48Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 66</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+   <Name>Do not raise exceptions in unexpected locations</Name>
+   <Description>Do not explicitly raise exceptions from unexpected locations. There are some methods, such as Equals and GetHashCode, which users do not expect to raise exceptions. Therefore calls to these methods are not commonly wrapped in try catch blocks.</Description>
+   <Resolution Name="PropertyGetter">{0} creates an exception of type {1}, an exception type that should not be raised in a property. If this exception instance might be raised, use a different exception type, convert this property into a method, or change this property's logic so that it no longer raises an exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386039.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error, Warning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberAbbreviation">Correct the casing of '{0}' in member name {1} by changing it to '{2}'. '{2}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+   <Name>Nested types should not be visible</Name>
+   <Description>Do not use public, protected or protected internal (Protected Friend) nested types as a way of grouping types. Use namespaces for this purpose. There are very limited scenarios where nested types are the best design. Also, nested type member accessibility is not clearly understood by all audiences. Enumerators are exempt from this rule.</Description>
+   <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182162.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+   <Name>Non-constant fields should not be visible</Name>
+   <Description>Static fields should be constant unless you carefully manage access to the field using locks. Using static variables without making them thread safe can compromise execution state. This rule applies to managed code libraries. If the analyzed assembly is an application, it is usually safe to exclude violations of this rule.</Description>
+   <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182353.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182191.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+   <Name>Type names should not match namespaces</Name>
+   <Description>Identifiers which conflict in whole or in part with namespace names should be avoided. Names that describe the purpose or contents of a type are preferred.</Description>
+   <Resolution Name="Default">The type name {0} conflicts in whole or in part with the namespace name '{1}'. Change either name to eliminate the conflict.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182257.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

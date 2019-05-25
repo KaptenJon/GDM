@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="GDMInterfaces.Tag">
+    <Position X="4.75" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAABAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>IModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TagType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMInterfaces.PluginSettings">
+    <Position X="5.25" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PluginSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GDMInterfaces.IInput">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IInput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.IIO">
+    <Position X="5.25" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IIO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.IModel">
+    <Position X="2" Y="8" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAAAAAAAAAADAAAAAQAAAAAAGAAAIgAAgAAAAA=</HashCode>
+      <FileName>IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.IOutput">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOutput.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tags" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="GDMInterfaces.IPlugin">
+    <Position X="2" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAggAABAgAAAAAAAAAAQAAAAAAAAAAAAAAAEAAAQ=</HashCode>
+      <FileName>IPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.IStatus">
+    <Position X="5" Y="9.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAIAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IStatus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.ITool">
+    <Position X="2.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAABAAAAAEAAABAAAAA=</HashCode>
+      <FileName>ITool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GDMInterfaces.ILog">
+    <Position X="5" Y="8" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GDMInterfaces.TagType">
+    <Position X="8" Y="5.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAQAAAQAACAAACAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>IModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GDMInterfaces.LogType">
+    <Position X="8" Y="8" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAABAAAgAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ILog.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

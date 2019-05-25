@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GDMTool.DataTableView">
+    <Position X="0.5" Y="13.25" Width="1.5" />
+    <Members>
+      <Method Name="AddTag_Click" Hidden="true" />
+      <Field Name="bindingNavigator" Hidden="true" />
+      <Field Name="bindingNavigatorCountItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveFirstItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveLastItem" Hidden="true" />
+      <Field Name="bindingNavigatorMoveNextItem" Hidden="true" />
+      <Field Name="bindingNavigatorMovePreviousItem" Hidden="true" />
+      <Field Name="bindingNavigatorPositionItem" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator1" Hidden="true" />
+      <Field Name="bindingNavigatorSeparator2" Hidden="true" />
+      <Field Name="bindingSource" Hidden="true" />
+      <Field Name="colAdd" Hidden="true" />
+      <Field Name="colRemove" Hidden="true" />
+      <Field Name="columnName" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="datagrid" Hidden="true" />
+      <Method Name="Datagrid_SelectionChanged" Hidden="true" />
+      <Field Name="dataTypeLabel" Hidden="true" />
+      <Field Name="dataTypeValue" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FixColumnSelect" Hidden="true" />
+      <Field Name="inactive" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Method Name="RemoveTag_Click" Hidden="true" />
+      <Field Name="selctedValue" Hidden="true" />
+      <Field Name="selectedColumnLabel" Hidden="true" />
+      <Field Name="tableAdd" Hidden="true" />
+      <Field Name="tableName" Hidden="true" />
+      <Field Name="tableRemove" Hidden="true" />
+      <Field Name="tagButton" Hidden="true" />
+      <Method Name="tagButton_DropDownOpening" Hidden="true" />
+      <Field Name="toolStripSeparator1" Hidden="true" />
+      <Field Name="toolStripSeparator2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AFAEAIkAoCAAhQNAYACEKAASAgAAAAkRAABJMAABBAg=</HashCode>
+      <FileName>DataTableView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.PluginMenu">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <Members>
+      <Field Name="categories" Hidden="true" />
+      <Method Name="controller_ColumnSelection" Hidden="true" />
+      <Method Name="controller_TableSelection" Hidden="true" />
+      <Field Name="defaultPluginImage" Hidden="true" />
+      <Method Name="MainSection_Click" Hidden="true" />
+      <Field Name="menu" Hidden="true" />
+      <Field Name="minus" Hidden="true" />
+      <Method Name="Plugin_Click" Hidden="true" />
+      <Field Name="plus" Hidden="true" />
+      <Method Name="PopulateMenu" Hidden="true" />
+      <Method Name="SetSection" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAUAEAEAAAgQAAAQIABAAAQACAAQAAA=</HashCode>
+      <FileName>PluginMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.TableViewer">
+    <Position X="3" Y="12" Width="1.5" />
+    <Members>
+      <Method Name="Contains" Hidden="true" />
+      <Method Name="Controller_ModelChanged" Hidden="true" />
+      <Method Name="Controller_ModelChanging" Hidden="true" />
+      <Method Name="InitDataTableView" Hidden="true" />
+      <Field Name="tableControl" Hidden="true" />
+      <Method Name="TableControl_SelectedIndexChanged" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAEACACAAAAAAAAAQAAAAQAAAAAQgAA=</HashCode>
+      <FileName>TableViewer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataTableView" />
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMCore.Controller">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <Members>
+      <Field Name="CONFIG_PATH" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Delegate Name="GDMCore.Controller.ExceptionRaisedDelegate" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.BatchStatusUpdateDelegate" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ActivePluginChange" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.StatusUpdateDelegate" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.TableSelectionChange" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ModelChangingEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ConfigUpdated" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ModelChangedEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ColumnSelectionChange" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GDMTool.PluginProperties">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <Members>
+      <Field Name="applyBtn" Hidden="true" />
+      <Method Name="ApplyBtn_Click" Hidden="true" />
+      <Method Name="Controller_ColumnSelection" Hidden="true" />
+      <Method Name="Controller_PluginActivated" Hidden="true" />
+      <Method Name="Controller_TableSelection" Hidden="true" />
+      <Method Name="LogBtn_Click" Hidden="true" />
+      <Field Name="propertyGrid" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAEABAAAAEAACAAAAAAAAAAoAAQAAAA=</HashCode>
+      <FileName>PluginProperties.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.ConfigViewer">
+    <Position X="4.5" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="current" Hidden="true" />
+      <Method Name="DeleteConfig_Click" Hidden="true" />
+      <Method Name="ExportConfig_Click" Hidden="true" />
+      <Method Name="FillImageList" Hidden="true" />
+      <Method Name="ImportConfig_Click" Hidden="true" />
+      <Field Name="menu" Hidden="true" />
+      <Method Name="NewConfig_Click" Hidden="true" />
+      <Method Name="OpenConfig_Click" Hidden="true" />
+      <Method Name="PreviousConfigurations" Hidden="true" />
+      <Method Name="SaveConfig_Click" Hidden="true" />
+      <Field Name="saved" Hidden="true" />
+      <Field Name="treeImages" Hidden="true" />
+      <Field Name="treeView" Hidden="true" />
+      <Method Name="treeView_AfterSelect" Hidden="true" />
+      <Method Name="UpdateCurrentConfiguration" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CiAAAAABAAAAAAEAAACAAAgEigAAAGAAAAAAABAAAQQ=</HashCode>
+      <FileName>ConfigViewer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.LogViewer">
+    <Position X="3" Y="13.75" Width="1.5" />
+    <Members>
+      <Field Name="chapterComboBox" Hidden="true" />
+      <Method Name="ChapterComboBox_SelectedIndexChanged" Hidden="true" />
+      <Field Name="closeButton" Hidden="true" />
+      <Method Name="CloseButton_Click" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="displayLabel" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FormatChapter" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="logRichTextBox" Hidden="true" />
+      <Method Name="LogViewer_Resize" Hidden="true" />
+      <Field Name="saveButton" Hidden="true" />
+      <Method Name="SaveButton_Click" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAgAABAAACAAAAFAAACAAAACBAAIAIAABAAAAAAAACA=</HashCode>
+      <FileName>LogViewer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.StatusBar">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <Members>
+      <Field Name="firstRun" Hidden="true" />
+      <Field Name="progressBar" Hidden="true" />
+      <Field Name="statusLabel" Hidden="true" />
+      <Method Name="UpdateBar" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAEAAAAAAAAAAAAAAAABACAAAAAgAAA=</HashCode>
+      <FileName>StatusBar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.Main">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="applyBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="configMenu" Hidden="true" />
+      <Field Name="controller" Hidden="true" />
+      <Field Name="deleteConfig" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="exportConfig" Hidden="true" />
+      <Field Name="importConfig" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="logBtn" Hidden="true" />
+      <Method Name="Main_FormClosed" Hidden="true" />
+      <Field Name="newConfig" Hidden="true" />
+      <Field Name="openConfig" Hidden="true" />
+      <Field Name="pluginMenu" Hidden="true" />
+      <Field Name="propertyGrid" Hidden="true" />
+      <Field Name="saveConfig" Hidden="true" />
+      <Field Name="splitContainer1" Hidden="true" />
+      <Field Name="splitContainer2" Hidden="true" />
+      <Field Name="splitContainer3" Hidden="true" />
+      <Field Name="statusStrip" Hidden="true" />
+      <Field Name="tabControl" Hidden="true" />
+      <Field Name="toolStripLabel1" Hidden="true" />
+      <Field Name="toolStripProgressBar" Hidden="true" />
+      <Field Name="toolStripStatusLabel" Hidden="true" />
+      <Field Name="treeView" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAECAAAAEAAACAAEgDCIICAUgCiAgAACggBAE=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pluginProperties" />
+      <Field Name="pluginmenu" />
+      <Field Name="configView" />
+      <Field Name="statusBar" />
+      <Field Name="tableview" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.Start">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Method Name="button1_Click" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="controller_BatchStatusUpdate" Hidden="true" />
+      <Method Name="controller_StatusUpdate" Hidden="true" />
+      <Method Name="DisplaySettings" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="EditConfig" Hidden="true" />
+      <Method Name="EditConfig_Click" Hidden="true" />
+      <Field Name="flowLayoutPanel1" Hidden="true" />
+      <Method Name="flowLayoutPanel1_ClientSizeChanged" Hidden="true" />
+      <Field Name="helptext" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listBox1" Hidden="true" />
+      <Method Name="listBox1_SelectedValueChanged" Hidden="true" />
+      <Field Name="logfile" Hidden="true" />
+      <Method Name="logfile_CheckedChanged" Hidden="true" />
+      <Field Name="logfilepath" Hidden="true" />
+      <Field Name="logfilepath_label" Hidden="true" />
+      <Field Name="overallProgress" Hidden="true" />
+      <Field Name="overallProgressBar" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="pluginProgress" Hidden="true" />
+      <Field Name="pluginProgressBar" Hidden="true" />
+      <Method Name="propertygrid_SelectedGridItemChanged" Hidden="true" />
+      <Field Name="run" Hidden="true" />
+      <Method Name="run_Click" Hidden="true" />
+      <Field Name="selected" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAhFAECgCQAEAAACAAAACAIAIgAAAEFAgA6BAAIg=</HashCode>
+      <FileName>Start.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMTool.NewConfig">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Method Name="button1_Click" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Method Name="button2_Click" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="textBox1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAYAAAAEGAAAAAIAAA=</HashCode>
+      <FileName>NewConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

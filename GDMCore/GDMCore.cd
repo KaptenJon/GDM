@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GDMCore.PluginManager">
+    <Position X="5.25" Y="1.25" Width="2.25" />
+    <Members>
+      <Method Name="External" Hidden="true" />
+      <Field Name="inputPlugins" Hidden="true" />
+      <Method Name="Internal" Hidden="true" />
+      <Method Name="LoadPluginsFromDll" Hidden="true" />
+      <Field Name="outputPlugins" Hidden="true" />
+      <Field Name="path" Hidden="true" />
+      <Field Name="pluginSettingsType" Hidden="true" />
+      <Field Name="toolPlugins" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AkAQgAAAAAAABAAAAIACAAAAAQAAAAEABAAAAAQEGAA=</HashCode>
+      <FileName>PluginManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GDMCore.Model">
+    <Position X="11.75" Y="2" Width="2.25" />
+    <Members>
+      <Field Name="dataset" Hidden="true" />
+      <Field Name="selectedColumnName" Hidden="true" />
+      <Field Name="selectedColumnType" Hidden="true" />
+      <Field Name="selectedTable" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAEAAAgAAAAAAACDBAAAAQAAAAACGAgAIhAAgAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.273" />
+  </Class>
+  <Class Name="GDMCore.ConfigManager">
+    <Position X="5.5" Y="9.75" Width="2" />
+    <Members>
+      <Field Name="configurations" Hidden="true" />
+      <Field Name="currentConfig" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Field Name="path" Hidden="true" />
+      <Field Name="settingtypes" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgMAAAABgEAAAIAACBAAAAAAAIAACAAAAEgBAAAA=</HashCode>
+      <FileName>ConfigManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentConfig" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Configurations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GDMCore.Controller">
+    <Position X="8.25" Y="3.5" Width="2.75" />
+    <Members>
+      <Field Name="activePlugin" Hidden="true" />
+      <Field Name="activeSettings" Hidden="true" />
+      <Field Name="backgroundWorker" Hidden="true" />
+      <Method Name="BackgroundWorker_DoWork" Hidden="true" />
+      <Method Name="BackgroundWorker_ProgressChanged" Hidden="true" />
+      <Method Name="BackgroundWorker_RunWorkerCompleted" Hidden="true" />
+      <Field Name="CONFIG_PATH" Hidden="true" />
+      <Field Name="configManager" Hidden="true" />
+      <Field Name="doCatchExceptions" Hidden="true" />
+      <Method Name="DoWork" Hidden="true" />
+      <Field Name="exceptionCatched" Hidden="true" />
+      <Field Name="log" Hidden="true" />
+      <Field Name="model" Hidden="true" />
+      <Field Name="PLUGIN_PATH" Hidden="true" />
+      <Field Name="pluginManager" Hidden="true" />
+      <Field Name="status" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Delegate Name="GDMCore.Controller.ExceptionRaisedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.BatchStatusUpdateDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ActivePluginChange" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.StatusUpdateDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.TableSelectionChange" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.PluginOperation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ModelChangingEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ConfigUpdated" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ModelChangedEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GDMCore.Controller.ColumnSelectionChange" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controller.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BFQAADAkwgSCAKAAgEAQKAHBZAoAAACABAxAKIAJAEI=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Log" />
+      <Property Name="Status" />
+      <Property Name="Model" />
+      <Property Name="ConfigManager" />
+      <Property Name="PluginManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GDMCore.Operation">
+    <Position X="12" Y="6.75" Width="2" />
+    <Members>
+      <Field Name="plugin" Hidden="true" />
+      <Field Name="settings" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAABACAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GDMCore.Config">
+    <Position X="12" Y="9.5" Width="2" />
+    <Members>
+      <Method Name="ClearTag" Hidden="true" />
+      <Field Name="filename" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="operations" Hidden="true" />
+      <Method Name="RefreshTag" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="GDMCore.Config.ConfigTag" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Config.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAABCIAAAAgSAAAAAAAQAAAAEAFAAAABAAABAAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Operations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GDMCore.Log">
+    <Position X="5.25" Y="4.25" Width="2.25" />
+    <Members>
+      <Field Name="controller" Hidden="true" />
+      <Field Name="currentChapter" Hidden="true" />
+      <Field Name="logChapters" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="GDMCore.Log.LogEntry" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Log.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="GDMCore.Log.LogChapter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Log.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgIAAQAAAAEAAAEAAAAAAAAAAAACAAAAAAAAAAJIAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GDMCore.Status">
+    <Position X="5.5" Y="7.5" Width="2" />
+    <Members>
+      <Field Name="currentStatus" Hidden="true" />
+      <Field Name="label" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Field Name="workHorse" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAEAAQEAAAEBAAIAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Status.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

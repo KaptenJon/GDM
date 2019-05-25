@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for SortColumns" Description="Code analysis rules for SortColumns.csproj." ToolsVersion="14.0">
+  <IncludeAll Action="Warning" />
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS1998" Action="None" />
+  </Rules>
+</RuleSet>
