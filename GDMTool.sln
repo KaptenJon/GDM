@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDMTool", "GDMTool\GDMTool.csproj", "{6A6C5CAA-5E98-492A-86E9-8B1CFD36CCE1}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -28,6 +28,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licenses", "Licenses", "{1B
 		LicensSharpZipLib.txt = LicensSharpZipLib.txt
 		Mathnet.txt = Mathnet.txt
 		ZedGraph.txt = ZedGraph.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82F7F515-8189-4B9B-AEB6-7C89CBE8914C}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation_Capture.jpg = Documentation_Capture.jpg
+		Documentation_Capture_thumb.jpg = Documentation_Capture_thumb.jpg
+		Home_GDM.png = Home_GDM.png
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -89,28 +97,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = GDMCore\\GDMCore.csproj
-		SccProjectName1 = GDMCore
-		SccLocalPath1 = GDMCore
-		SccProjectUniqueName2 = GDMInterfaces\\GDMInterfaces.csproj
-		SccProjectName2 = GDMInterfaces
-		SccLocalPath2 = GDMInterfaces
-		SccProjectUniqueName3 = GDMPlugins\\GDMPlugins.csproj
-		SccProjectName3 = GDMPlugins
-		SccLocalPath3 = GDMPlugins
-		SccProjectUniqueName4 = GDMService\\GDMService.csproj
-		SccProjectName4 = GDMService
-		SccLocalPath4 = GDMService
-		SccProjectUniqueName5 = GDMTool\\GDMTool.csproj
-		SccProjectName5 = GDMTool
-		SccLocalPath5 = GDMTool
-		SccProjectUniqueName6 = ServiceInstaller\\ServiceInstaller.vdproj
-		SccProjectName6 = ServiceInstaller
-		SccLocalPath6 = ServiceInstaller
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81547EC2-91CE-4D32-B336-37AE9C028AD5}
 	EndGlobalSection
 EndGlobal
