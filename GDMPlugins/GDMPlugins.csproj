@@ -21,9 +21,10 @@
     <PackageReference Include="MathNet.Numerics.Signed" Version="4.7.0" />
     <PackageReference Include="Meta.Numerics" Version="4.2.0" />
     <PackageReference Include="Microsoft.Data.ConnectionUI" Version="16.1.28916.169" />
-    <PackageReference Include="Microsoft.Data.ConnectionUI.Dialog" Version="16.1.28916.169" />
     <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1652.0" />
     <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    <PackageReference Include="System.Data.OleDb" Version="9.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="ZedGraph" Version="5.2.1" />
   </ItemGroup>
 

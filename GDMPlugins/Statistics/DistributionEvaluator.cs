@@ -209,8 +209,8 @@ namespace GDMPlugins.Statistics
 
             foreach (double x in copy)
             {
-                double t1 = (double) j/n - dist.DistributionFunction(x);
-                double t2 = dist.DistributionFunction(x) - ((double) (j - 1)/n);
+                double t1 = (double) j/n - dist.CDF(x, 0, 0, 0);
+                double t2 = dist.CDF(x, 0, 0, 0) - ((double) (j - 1)/n);
                 if (t1 > dMaxPlus) dMaxPlus = t1;
                 if (t2 > dMaxMinus) dMaxMinus = t2;
                 j++;

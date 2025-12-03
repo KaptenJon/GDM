@@ -155,15 +155,6 @@ namespace GDMPlugins.Statistics
                 obt.DoIteration();
                 return new WeibullDistribution(obt.Result[0], obt.Result[1]);
         }
-        public override List<double> Gradient(List<double> x)
-            {
-                return x;
-            }
-
-            public override List<List<double>> Hessian(List<double> x)
-            {
-                throw new NotImplementedException();
-            }
 
             public int _numberOfVariable = 2;
         }

@@ -7,7 +7,7 @@ using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Excel;
+using ExcelDataReader;
 using GDMInterfaces;
 
 namespace GDMPlugins.Excel
