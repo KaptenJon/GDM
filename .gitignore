@@ -244,6 +244,7 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 ServiceFabricBackup/
 *.rptproj.bak
+*.csproj.old
 
 # SQL Server files
 *.mdf
