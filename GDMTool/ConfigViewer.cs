@@ -214,7 +214,7 @@ namespace GDMTool
         private void UpdateCurrentConfiguration()
         {
             _menu.Items["saveConfig"].Enabled = true;
-            _menu.Invoke((MethodInvoker)(() =>
+            _menu.Invoke((System.Windows.Forms.MethodInvoker)(() =>
             {
                 _current.Nodes.Clear();
 

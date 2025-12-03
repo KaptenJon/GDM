@@ -144,7 +144,7 @@ namespace GDMTool
         {
             if (Batch.Text == "Start new file batch")
             {
-                OpenFileDialog files = new OpenFileDialog();
+                System.Windows.Forms.OpenFileDialog files = new System.Windows.Forms.OpenFileDialog();
                 files.Multiselect = true;
                 files.Title = "Select all files for the batch operation";
                 if (files.ShowDialog() == DialogResult.OK)

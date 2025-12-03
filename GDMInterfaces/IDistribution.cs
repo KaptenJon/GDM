@@ -14,7 +14,7 @@ namespace GDMInterfaces
         /// </summary>
         /// <param name="a">Location parameter</param>
         /// <param name="b">Scale parameter</param>
-        /// <param name="c">Shape paramet</erparam>
+        /// <param name="c">Shape parameter</param>
         void MLE(List<double> observations, out double a, out double b, out double c);
 
         /// <summary>

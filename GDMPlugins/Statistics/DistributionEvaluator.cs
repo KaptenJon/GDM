@@ -196,7 +196,7 @@ namespace GDMPlugins.Statistics
         }
 
 
-        public static double Evaluate(List<double> observations, IDistribution dist)
+        public static double Evaluate(List<double> observations, GDMInterfaces.IDistribution dist)
         {
             if (dist == null)
                 throw new Exception("Distribution not initialized");

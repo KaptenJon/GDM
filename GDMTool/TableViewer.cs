@@ -40,7 +40,7 @@ namespace GDMTool
         {
             _dataTableView.Activate();
             TabPage selected = null;
-            _tableControl.Invoke((MethodInvoker)(() =>
+            _tableControl.Invoke((System.Windows.Forms.MethodInvoker)(() =>
             {
             if (_tableControl.TabPages.Count > 0)
             {
