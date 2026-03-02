@@ -22,6 +22,7 @@ namespace GDMCore
         private string _path = "Plugin";
         private List<IPlugin> _specialPlugins = new List<IPlugin>();
         public static AppDomain PluginDomain { get; set; }
+        private PluginLoadContext _pluginLoadContext;
         /// <summary>
         /// Instanciates all plugins
         /// </summary>
@@ -32,7 +33,7 @@ namespace GDMCore
             Internal();
             External();
 
-            
+
              var pluglist = new List<Type>();
 
             foreach (IPlugin plug in _inputPlugins)
@@ -67,23 +68,53 @@ namespace GDMCore
         private void External()
         {
             if (!Directory.Exists(_path)) Directory.CreateDirectory(_path);
- 
+
+            _pluginLoadContext = new PluginLoadContext(System.IO.Path.GetFullPath(_path));
+
             // Get all dll files in path
             foreach (string dll in Directory.GetFiles(_path, "*.dll"))
             {
+                // Skip DLLs that are already loaded in the host (default) context.
+                // These are shared assemblies (GDMInterfaces, GDMCore, MathNet, etc.)
+                // and must NOT be loaded again into the plugin context, otherwise
+                // type identity breaks (e.g. IInput from host != IInput from plugin copy).
+                // They will be resolved on-demand via PluginLoadContext.Load() when
+                // the actual plugin assembly references them.
+                try
+                {
+                    var name = System.Reflection.AssemblyName.GetAssemblyName(dll);
+                    System.Runtime.Loader.AssemblyLoadContext.Default.LoadFromAssemblyName(name);
+                    continue; // Already in host — skip
+                }
+                catch
+                {
+                    // Not in host context — this is a plugin or plugin-only dependency
+                }
+
                 LoadPluginsFromDll(dll);
             }
         }
 
         private void LoadPluginsFromDll(string plugin)
         {
-            //Assembly assembly = Assembly.LoadFile(plugin);
             try
             {
-                var assembly = Assembly.LoadFile(plugin);
+                var assembly = _pluginLoadContext.LoadFromAssemblyPath(System.IO.Path.GetFullPath(plugin));
 
-
-
+                // Only scan assemblies that actually reference GDMInterfaces — they are the real plugins.
+                // This avoids ReflectionTypeLoadException from dependency DLLs
+                // (e.g. Microsoft.Data.SqlClient) that happen to be in the Plugin folder.
+                bool referencesInterfaces = false;
+                foreach (var refName in assembly.GetReferencedAssemblies())
+                {
+                    if (refName.Name == "GDMInterfaces")
+                    {
+                        referencesInterfaces = true;
+                        break;
+                    }
+                }
+                if (!referencesInterfaces)
+                    return;
 
                 // Get all classes in dll file
                 try
@@ -117,14 +148,10 @@ namespace GDMCore
                 }
                 catch (Exception)
                 {
-                   // if (!PluginSettings.IsInUIMode) ;
-                    //EventLog.WriteEntry("GDM Service", e.Message);
-
                 }
             }
-            catch (Exception )
+            catch (Exception)
             {
-                //EventLog.WriteEntry("GDM Service", e.Message);
             }
 
         }

@@ -1,78 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Drawing.Design;
 using System.Windows.Forms;
-using Microsoft.Data.ConnectionUI;
+using System.Windows.Forms.Design;
 
 namespace GDMPlugins.SQL
 {
-    //MAde by Jon Andersson
-    public  class SqlConnectDialog : UITypeEditor
+    public class SqlConnectDialog : UITypeEditor
     {
         public static List<string> List;
-        public override object EditValue(ITypeDescriptorContext context, IServiceProvider provider, object value)
-        {
-            String settings = (String)value;
 
-            ShowDialog();
-            
-            return base.EditValue(context, provider, ConnectionString);
-            
+        public static string ConnectionString { get; private set; }
 
-        }
-        
-          
         public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext context)
         {
             return UITypeEditorEditStyle.Modal;
         }
 
-        public SqlConnectDialog()
+        public override object EditValue(ITypeDescriptorContext context, IServiceProvider provider, object value)
         {
-            //ShowDialog();
-            
-        }
+            var editorService = provider?.GetService(typeof(IWindowsFormsEditorService))
+                                as IWindowsFormsEditorService;
+            if (editorService == null)
+                return value;
 
-        public static String ConnectionString { get; private set; }
-
-        public DialogResult ShowDialog()
-        {
-            DataConnectionDialog dcd = new DataConnectionDialog();
-            DataSource.AddStandardDataSources(dcd);
-            
-
-            if (DataConnectionDialog.Show(dcd) == DialogResult.OK)
+            using (var form = new SqlConnectionForm(value as string ?? ConnectionString))
             {
-                try
+                if (editorService.ShowDialog(form) == DialogResult.OK)
                 {
-                    // load tables
-                    using (SqlConnection connection = new SqlConnection(dcd.ConnectionString))
-                    {
-                        connection.Open();
-                        SqlCommand cmd = new SqlCommand("SELECT name FROM master..sysdatabases WHERE name NOT IN ('master', 'tempdb', 'model', 'msdb', 'ReportServer$SQLEXPRESS', 'ReportServer$SQLEXPRESSTempDB')", connection);
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                Console.WriteLine(reader.HasRows);
-                            }
-                        }
-                        connection.Close();
-                        ConnectionString = dcd.ConnectionString;
-                        // enable Tablename listBOx?
-                    }
-                    return DialogResult.OK;
+                    ConnectionString = form.ConnectionString;
+                    return ConnectionString;
                 }
-                catch
-                {
-                    MessageBox.Show("Connection failed");
-                    return ShowDialog();
-                }
-
             }
-            return DialogResult.Cancel;
+            return value;
         }
     }
 }

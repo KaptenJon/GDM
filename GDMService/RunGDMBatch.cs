@@ -34,9 +34,6 @@ namespace GDMService
                 if (_started)
                     try
                     {
-                        var domain  = new AppDomainSetup(); 
-                           domain.PrivateBinPath = "Plugin";
-                        
                         var controller = new Controller(AppDomain.CurrentDomain.BaseDirectory, _configurations);
 
                             foreach (Config c in controller.ConfigManager.Configurations)

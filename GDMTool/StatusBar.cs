@@ -15,7 +15,6 @@ namespace GDMTool
 
         private ToolStripProgressBar overallprogressbar;
         private ToolStripStatusLabel overalllable;
-        private bool _firstRunB = true;
 
         public StatusBar(Controller controller, ToolStripProgressBar progressBar, ToolStripStatusLabel statusLabel, ToolStripProgressBar overallprogressbar, ToolStripStatusLabel overalllable)
         {

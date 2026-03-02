@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28922.388
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDMTool", "GDMTool\GDMTool.csproj", "{6A6C5CAA-5E98-492A-86E9-8B1CFD36CCE1}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDMService", "GDMService\GD
 		{EFCBC6B5-139A-4ABE-B900-9A3BA074BB09} = {EFCBC6B5-139A-4ABE-B900-9A3BA074BB09}
 		{C469B1F9-2DA6-418F-9E49-378ACB1D8869} = {C469B1F9-2DA6-418F-9E49-378ACB1D8869}
 	EndProjectSection
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ServiceInstaller", "ServiceInstaller\ServiceInstaller.vdproj", "{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licenses", "Licenses", "{1B6CB123-38BF-4AD1-ADC4-9B15F429C9F9}"
 	ProjectSection(SolutionItems) = preProject
@@ -86,13 +84,6 @@ Global
 		{76FE59CF-66FA-402D-91FD-63CD8A24DDC4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76FE59CF-66FA-402D-91FD-63CD8A24DDC4}.Release|x86.ActiveCfg = Release|Any CPU
 		{76FE59CF-66FA-402D-91FD-63CD8A24DDC4}.Release|x86.Build.0 = Release|Any CPU
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Debug|Any CPU.ActiveCfg = Debug
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Debug|x86.ActiveCfg = Debug
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Debug|x86.Build.0 = Debug
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Release|Any CPU.ActiveCfg = Release
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Release|Any CPU.Build.0 = Release
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Release|x86.ActiveCfg = Release
-		{3B883814-FFDA-43BA-BC47-A95B58DFF4E9}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

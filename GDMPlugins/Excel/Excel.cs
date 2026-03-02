@@ -4,10 +4,10 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
-using System.Net;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using Excel;
+using ExcelDataReader;
 using GDMInterfaces;
 
 namespace GDMPlugins.Excel
@@ -70,8 +70,10 @@ namespace GDMPlugins.Excel
                 {
                     IExcelDataReader excelReader =
                         ExcelReaderFactory.CreateOpenXmlReader(new FileInfo(set.FileName).OpenRead());
-                    excelReader.IsFirstRowAsColumnNames = set.Hdr;
-                    result = excelReader.AsDataSet();
+                    result = excelReader.AsDataSet(new ExcelDataSetConfiguration
+                    {
+                        ConfigureDataTable = _ => new ExcelDataTableConfiguration { UseHeaderRow = set.Hdr }
+                    });
                     if (result == null)
                         throw new Exception();
                         
@@ -94,8 +96,10 @@ namespace GDMPlugins.Excel
                 {
                     IExcelDataReader excelReader =
                         ExcelReaderFactory.CreateBinaryReader(new FileInfo(set.FileName).OpenRead());
-                    excelReader.IsFirstRowAsColumnNames = set.Hdr;
-                    result = excelReader.AsDataSet();
+                    result = excelReader.AsDataSet(new ExcelDataSetConfiguration
+                    {
+                        ConfigureDataTable = _ => new ExcelDataTableConfiguration { UseHeaderRow = set.Hdr }
+                    });
                     status.Increment();
                     excelReader.Close();
                 }
@@ -350,21 +354,16 @@ namespace GDMPlugins.Excel
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             string newfile = appData + @"\GDMTool\temp\" + Guid.NewGuid() + ".xlsx";
             Directory.CreateDirectory(appData + @"\GDMTool\temp\");
-            // Create a new WebClient instance.
-            using (WebClient myWebClient = new WebClient())
+            try
             {
-                try
-                {
-                    
-                    // Download the Web resource and save it into the current filesystem folder.
-                    myWebClient.DownloadFile(filename, newfile);
-
-                }
-                catch (Exception)
-                {
-                    log.Add(LogType.Error, "Error opening file");
-                    return null;
-                }
+                using var client = new HttpClient();
+                var bytes = client.GetByteArrayAsync(filename).GetAwaiter().GetResult();
+                File.WriteAllBytes(newfile, bytes);
+            }
+            catch (Exception)
+            {
+                log.Add(LogType.Error, "Error opening file");
+                return null;
             }
             return newfile;
         }

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Windows.Threading;
 using GDMCore;
 using GDMInterfaces;
-using Microsoft.Win32;
+
 
 namespace GDMTool
 {
@@ -65,7 +65,6 @@ namespace GDMTool
         {
 
         }
-        private TreeNode _mOldSelectNode;
         private void treeView_MouseUp(object sender, MouseEventArgs e)
         {
             var treeView1 = sender as TreeView;

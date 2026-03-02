@@ -59,7 +59,7 @@ namespace GDMPlugins.Statistics
         /// Determines the best suitable distribution
         /// </summary>
         /// <param name="ob">List with observed vales</param>
-        /// <param name="settings"></param>
+        /// <param name="distributions">Array of distribution names to evaluate</param>
         /// <param name="log"></param>
         /// <returns>Object with location, scale, shape and RSquare value</returns>
         public static DistributionData BestDistribution(IEnumerable<double> ob, string[] distributions,
@@ -90,7 +90,7 @@ namespace GDMPlugins.Statistics
         /// </summary>
         /// <param name="observations">List with observed values</param>
         /// /// <param name="log">ILog object</param>
-        /// <param name="settings"></param>
+        /// <param name="distributions">Array of distribution names to evaluate</param>
         /// <returns>List with results from MLE and Kolmogorov-Smirnor algorithm</returns>
         public static IEnumerable<DistributionData> EvaluateDistributions(List<double> observations,
             ILog log, string[] distributions)
@@ -165,8 +165,8 @@ namespace GDMPlugins.Statistics
 
                 return 0;
             }
-            obs.StableSort();
-            newobs.StableSort();
+            Accord.Math.Vector.Sort(obs);
+            Accord.Math.Vector.Sort(newobs);
             var r = GoodnessOfFit.RSquared(newobs, obs);
             if (Double.IsNaN(r))
                 r = 0;
@@ -196,7 +196,7 @@ namespace GDMPlugins.Statistics
         }
 
 
-        public static double Evaluate(List<double> observations, IDistribution dist)
+        public static double Evaluate(List<double> observations, Accord.Statistics.Distributions.IDistribution dist)
         {
             if (dist == null)
                 throw new Exception("Distribution not initialized");
