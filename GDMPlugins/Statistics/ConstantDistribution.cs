@@ -66,7 +66,7 @@ namespace GDMPlugins.Statistics
 
         public void Fit(Array observations, int[] weights)
         {
-            Fit(observations,  weights.Cast<double>().ToArray());
+            Fit(observations, Array.ConvertAll(weights, w => (double)w));
         }
 
         public void Fit(Array observations, IFittingOptions options)

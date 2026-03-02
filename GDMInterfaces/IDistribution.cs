@@ -12,9 +12,10 @@ namespace GDMInterfaces
         /// <summary>
         /// Maximum Likelihood Estimation
         /// </summary>
+        /// <param name="observations">List of observed values</param>
         /// <param name="a">Location parameter</param>
         /// <param name="b">Scale parameter</param>
-        /// <param name="c">Shape paramet</erparam>
+        /// <param name="c">Shape parameter</param>
         void MLE(List<double> observations, out double a, out double b, out double c);
 
         /// <summary>

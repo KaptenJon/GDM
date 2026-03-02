@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
@@ -35,7 +35,7 @@ namespace GDMTool
             try
             {
                 if(this.IsHandleCreated)
-                this.Invoke((MethodInvoker) (() =>
+                this.Invoke((System.Windows.Forms.MethodInvoker) (() =>
                 {
 
                     bindingSource.DataSource = null;
@@ -51,6 +51,7 @@ namespace GDMTool
             _inactive = false;
         }
 
+        [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public DataTable DataTable
         {
             get { return (DataTable)bindingSource.DataSource; }

@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Drawing.Design;
 using System.IO;
-using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
@@ -114,22 +114,18 @@ namespace GDMPlugins.Excel
         }
         public bool URLExists(string url)
         {
-            bool result = true;
-
             try
             {
-                WebRequest webRequest = WebRequest.Create(url);
-                webRequest.Timeout = 2000; // miliseconds
-                webRequest.Method = "HEAD";
-
-                webRequest.GetResponse();
+                using var client = new HttpClient();
+                client.Timeout = TimeSpan.FromMilliseconds(2000);
+                using var request = new HttpRequestMessage(HttpMethod.Head, url);
+                var response = client.Send(request);
+                return response.IsSuccessStatusCode;
             }
             catch
             {
-                result = false;
+                return false;
             }
-
-            return result;
         }
         public object GetDynamicSettings() 
         {

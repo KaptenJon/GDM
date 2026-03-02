@@ -602,9 +602,7 @@ namespace GDMPlugins
     public partial class CMSDDocumentDataSectionJobPlannedEffort {
     
         private CMSDDocumentDataSectionJobPlannedEffortProcessingTime[] processingTimeField;
-    
-        private CMSDDocumentDataSectionJobPlannedEffortPartType[] partTypeField;
-    
+
         private Resource[] resourcesRequiredField;
         private CMSDDocumentDataSectionJobPlannedEffortPartType[] partTypeProducedField;
         private CMSDDocumentDataSectionJobPlannedEffortPartType[] partTypeConsumedField;

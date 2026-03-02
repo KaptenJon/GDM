@@ -166,7 +166,7 @@ namespace GDMPlugins.Excel
                         sheetData.Append(newRow);
 
                     }
-                    workbook.Close();
+                    workbook.Dispose();
                 }
                 stream.Close();
             }

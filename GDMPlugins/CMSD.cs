@@ -42,8 +42,6 @@ namespace GDMPlugins
 
         private string _lastSelectedTable = "";
         private int _lastSelectedTableType = 0;
-        private string _lastSelectedColumn = "";
-        private int _lastSelectedcolumnType = 0;
         private bool _xmlInit = false;
         private bool _stop = false;
         public void UpdateSettings(PluginSettings pluginSettings, IModel model)
@@ -62,8 +60,6 @@ namespace GDMPlugins
             if(model.SelectedTable.TableName != _lastSelectedTable && !_stop)
             {
                 _lastSelectedTable = model.SelectedTable.TableName;
-                _lastSelectedcolumnType = 0;
-                _lastSelectedColumn = "";
                 switch (_lastSelectedTableType)
                 {
                     case 0:

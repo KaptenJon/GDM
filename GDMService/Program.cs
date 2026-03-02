@@ -17,7 +17,6 @@ namespace GDMService
         /// </summary>
         static void Main()
         {
-            AppDomain.CurrentDomain.SetupInformation.PrivateBinPath = "Plugin";
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {

@@ -13,7 +13,7 @@ namespace GDMTool
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        private static void Main(string[] args)
+        private static void Main(string[] args) 
         {
             //  AppDomainSetup info = new AppDomainSetup();
             //  info.PrivateBinPath = "Plugin";

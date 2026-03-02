@@ -135,9 +135,8 @@ namespace GDMTool
 
                 try
                 {
-                    item.Image = ((IPlugin)plugin).Icon.GetThumbnailImage(20,20,null,IntPtr.Zero);
-                    if(item.Image==null)
-                        item.Image = _defaultPluginImage;  
+                    var icon = ((IPlugin)plugin).Icon;
+                    item.Image = icon?.GetThumbnailImage(20, 20, null, IntPtr.Zero) ?? _defaultPluginImage;
                 }
                 catch
                 {
